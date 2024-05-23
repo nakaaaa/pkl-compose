@@ -1,0 +1,15 @@
+version = "3"
+
+class Hello {
+  image: String = "hello"
+}
+
+class Services {
+  hello: Hello
+}
+
+services: Services = new {
+  hello = new {
+    image = "hello-world:latest"
+  }
+}
